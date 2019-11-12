@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                         // 업로드를 하려면 이미지의 절대경로(실제경로 : file://storage/emulated/0/Download/aaaa.png)가 필요함.
                         // Uri --> 절대경로(String)로 변환
                         imgPath= getRealPathFromUri(uri);
+                        Toast.makeText(this, imgPath, Toast.LENGTH_SHORT).show();
 
                         //이미지 경로 Uri 와 실제경로 확인해보기
                         new AlertDialog.Builder(this).setMessage(uri.toString()+"\n"+imgPath).create().show();
