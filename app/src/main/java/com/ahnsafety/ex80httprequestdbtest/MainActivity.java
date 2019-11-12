@@ -136,7 +136,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickLoad(View view) {
 
-
+        Intent intent= new Intent(this, TalkActivity.class);
+        startActivity(intent);
 
     }
 }
